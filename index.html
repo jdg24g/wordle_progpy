@@ -1,24 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/css/style.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="src/css/style.css">
+  <title>Document</title>
 </head>
 <body>
-    <div id="container">
-        <h1>Wordle PPY</h1>
-        <input type="text" pattern="[A-Za-z]" maxlength="5" id="guess-input" onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) ? true : false;">
-        <button id="guess-button">Intentar</button>
-        <div id="grid">
-          <article id="cuadro">
-   
-          </article>
-        </div>
-        <p id="guesses"></p>
-      </div>
-    <script src="src/js/script.js"></script>
+  <main>
+    <div class="container">
+      <form>
+        <h1>WORDLE</h1>
+        <input type="text" placeholder="INGRESA UN TEXTO">
+        <button type="submit" class="intentar">INTENTAR</button>
+      </form>
+    </div>
+  </main>
 </body>
 </html>
