@@ -12,14 +12,10 @@ function intentar() {
     if(intento != 0){
         console.log('funciona')
         const INTENTO = intento.toUpperCase()
-        if(INTENTO === aleatorio){
-            final('<h2 class="error">Ganaste</h2>')
-            return
-        }
-
         const GRID = document.getElementById('cuadro')
         const ROW = document.createElement('div')
         ROW.className = 'row'
+
         for (let i in aleatorio){
             const SPAN = document.createElement('span')
             SPAN.className = 'letter'
@@ -36,6 +32,10 @@ function intentar() {
         GRID.appendChild(ROW)
 
         intentos--
+        if(INTENTO === aleatorio){
+            final('<h2 class="error">Ganaste</h2>')
+            return
+        }
         if(intentos == 0){
             final('<h2 class="error">PERDISTE</h2>')
         }
