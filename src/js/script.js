@@ -46,12 +46,6 @@ function intentar() {
     
 }
 
-function sinDatos(mensaje){
-    const INPUT = document.getElementById('guess-input')
-    let contenedor = document.getElementById('guesses')
-    contenedor.innerHTML = mensaje
-}
-
 function final(mensaje){
     const INPUT = document.getElementById('guess-input')
     INPUT.disabled = true
