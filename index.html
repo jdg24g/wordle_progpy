@@ -11,6 +11,7 @@
     <div id="container">
         <h1>Wordle PPY</h1>
         <input type="text" pattern="[A-Za-z]" maxlength="5" id="guess-input" onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) ? true : false;">
+        <div id="error">Debes ingresar un texto</div>
         <button id="guess-button">Intentar</button>
         <div id="grid">
           <article id="cuadro">
@@ -19,6 +20,6 @@
         </div>
         <p id="guesses"></p>
       </div>
-    <script src="src/js/script.js"></script>
+    <script src="src/js/test.js"></script>
 </body>
 </html>
